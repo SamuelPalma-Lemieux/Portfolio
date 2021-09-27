@@ -2,7 +2,7 @@
    header / components
    ========================================================================== */
    header {
-    background: var(--color-bg-tertiary);
+    
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -14,9 +14,9 @@
     
 
     .wrapper {
-        max-width:1400px ;
+        max-width:1600px ;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         a{
             max-width: 20vw;
@@ -27,6 +27,11 @@
        
     }
     
+}
+.header__brand{
+   img{
+   width: 65%;
+ }
 }
 
 .header__toggle {
@@ -69,6 +74,7 @@
             );
         }
     }
+    
 
     .nav-is-active & {
         span {
@@ -106,6 +112,18 @@
     transform: translateX(-100%);//modifier
     transition: all 0.4s $ease-out-expo;//modifier
 
+    .separateur{
+       display: none;
+      
+       
+       @media screen and (min-width: $breakpoint-md) {
+          display: block;
+          height:45px;
+          background-color:var(--color-primary) ;
+          border: 1px solid var(--color-primary);
+      }
+    }
+
     .nav-is-active &{
         transform: translateX(0);//modifier anim + point tp
         opacity: 1;//modifier anim + point tp
@@ -121,17 +139,18 @@
         padding: 0;
         opacity: 1;
         
-        
+     
+            
+      
         a {
-            font-size: var(--font-size-h5);
+            font-size: var(--font-size-h3);
             width: 100%;
             display: block;
             text-align: center;
             font-family: var(--font-primary);
-            padding-bottom: 30px;
+            
         }
         a:hover{
-            background-image: url(../assets/images/underline.png) ;
             background-repeat:no-repeat;
             background-position: center ;
             background-size: 100%  10px;
@@ -151,11 +170,13 @@
             transform: none;
         }
         a {
-            color: var(--color-secondary-lighter);
+            color: var(--color-primary);
             padding: 10px;
 
             &:hover {
+                
                 color: var(--color-white);
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
             }
         }
     }
@@ -168,6 +189,7 @@
     padding: 0 20px;
     position: relative;
     z-index: 2;
+    margin-right: 30px;
 
     @media screen and (min-width: $breakpoint-md) {
         font-size: inherit;

@@ -2,7 +2,7 @@
    icons / component
    ========================================================================== */
 
-[class^='icon'] {
+   [class^='icon'] {
     fill: currentColor; // inherit color of its context
     display: inline-block;
     flex: 0 0 auto; // prevent icon shrink/grow if in a flex parent
@@ -36,6 +36,6 @@
 }
 
 .icon--xl {
-    height: 2.7em;
-    width: 2.7em;
+    height: 7.5em;
+    width: 7.5em;
 }
