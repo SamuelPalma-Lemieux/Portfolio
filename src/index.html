@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grill-o-rama</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Sen&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body data-component="Scrolly">
+        <div class="site-container" >
+            <div class="snackbar snackbar__Hide" data-delay="2000" data-component="Snackbar" data-autohide="true" data-scroll-limit="0.1" data-id="1">
+                <p>Veuiller prendre note que nos mesures sanitaires sont aux normes</p>
+               
+                <svg class="icon icon--xs close__snackbar" data-snackbar-status="ferme">
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+           
+            </div>
+            <header class="header" data-component="Header" data-autohide="true" data-scroll-limit="0.1">
+                <div class="wrapper">
+                    <a href="#" class="header__brand">
+                        <img src="assets/images/logo.png" alt="Logo Grill-o-rama" />
+                    </a>
+                    <nav class="nav-primary">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="nav-primary__item">Accueil</a>
+                            </li>
+                            <li>
+                                <a href="programmation.html" class="nav-primary__item">Programmation</a>
+                            </li>
+                            <li>
+                                <a href="conferencier.html" class="nav-primary__item">Conferenciers</a>
+                            </li>
+                            <li>
+                                <a href="contactez-nous.html" class="nav-primary__item">Contactez-nous</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+        </div>
+
+        <section class="hero">
+            <div class="hero__media">
+                <img src="assets/images/barbecue_stone.jpg" alt="Photos de barbecue" />
+            </div>
+            <div class="hero__content">
+                <div class="wrapper">
+                    <a href="">
+                        <button class="main--button">Embarquez dans l'aventure</button>
+                    </a>
+                    <p>19-20-21 juin</p>
+                    <div class="hero__social">
+                        <br />
+                        <nav class="socials">
+                            <ul>
+                                <li>
+                                    <a href="http://www.facebook.com" target="_blank">
+                                        <svg class="icon icon--md">
+                                            <use xlink:href="#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.instagram.com" target="_blank">
+                                        <svg class="icon">
+                                            <use xlink:href="#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.twitter.com" target="_blank">
+                                        <svg class="icon">
+                                            <use xlink:href="#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.twitter.com" target="_blank">
+                                        <svg class="icon">
+                                            <use xlink:href="#icon-snapchat"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="forfait--content">
+            <div class="intro">
+                <img src="assets/images/logo.png" alt="" class="logo__forfait" />
+                <h2>L’évènement tant attendu de l’année</h2>
+                <p>
+                    C’est pour les personnes passionnés par le barbecue ou meme n’importe qui qui est interessé dans la
+                    nourriture ou les famille qui cherche une sortie. Il y a de tout des amateurs aux chefs
+                    professionnels.
+                </p>
+            </div>
+            <div class="forfait">
+                <h1>Forfaits</h1>
+                <div class="forfait--simple" data-scrolly="fromRight">
+                    <a href="">
+                        <h2>Entrée</h2>
+                        <h3>L’amateur</h3>
+                        <p>Pour les amateurs de barbecue et de la grillade sur les patio ensoleillé l’été</p>
+                        <h4>50$</h4>
+                    </a>
+                </div>
+                <div class="forfait--simple" data-scrolly="fromBack">
+                    <a href="">
+                        <h2>Plat principale</h2>
+                        <h3>Le passioné</h3>
+                        <p>Pour les passionés de barbecue et de la grillade sur les patio ensoleillé l’été</p>
+                        <h4>100$</h4>
+                    </a>
+                </div>
+                <div class="forfait--simple" data-scrolly="fromRight">
+                    <a href="">
+                        <h2>Dessert</h2>
+
+                        <h3>Le professionel</h3>
+                        <p>
+                            Pour les explorateurs gustatif du barbecue et de la grillade sur les patio ensoleillé l’été
+                        </p>
+                        <h4>150$</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="degustation">
+            <div class="degustation__h1">
+                <h1>Dégustation</h1>
+            </div>
+
+            <div class="container__video">
+                <div class="video" data-component="Video" data-video-id="F9ury5-K_2Y">
+                    <div class="video__media js-video">
+                        <img class="js-poster" src="./assets/images/barbecue-party.jpg" alt="barbecue party" />
+                        <svg class="icon icon--stroke icon--xl">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="en_vedette">
+            <h1>En vedette</h1>
+            <div class="wrapper">
+                <div class="swiper-container" data-component="Carousel">
+                    <div class="swiper-wrapper">
+                        <div
+                            class="swiper-slide swiper-slide-secondary"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal"
+                            data-modal-title="appolo"
+                            data-modal-color="var( --color-bg-secondary)"
+                            data-modal-content="Chef proprietaire du Grange d'Apollo Auteur et Chroniqueur, animateur"
+                            data-modal-conf="appolo"
+                        >
+                            <div class="swiper-slide-content">
+                                <div class="swiper--vedette">
+                                    <img src="assets/images/appolo.jpg" alt="" class="chef" />
+                                    <div class="swiper--vedette__content">
+                                        <h5>Giovanni Apollo</h5>
+                                        <p>Chef proprietaire du Grange d'Apollo Auteur et Chroniqueur, animateur</p>
+                                        <a href="">Plus d’information </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide swiper-slide-secondary"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal"
+                            data-modal-title="Jared"
+                            data-modal-color="var(--color-bg-tertiary)"
+                            data-modal-conf="Jared"
+                        >
+                            <div class="swiper-slide-content">
+                                <div class="swiper--vedette">
+                                    <img src="assets/images/Jared.jpg" alt="" class="chef" />
+                                    <div class="swiper--vedette__content">
+                                        <h5>Jared from Subway</h5>
+                                        <p>@Jaredthesub la viande est ma passion</p>
+                                        <a href="">Plus d’information </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide swiper-slide-secondary"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal"
+                            data-modal-title="ramsay"
+                            data-modal-color="var(--color-bg-quaternary)"
+                            data-modal-content="@GordonRamsay Always near food"
+                            data-modal-conf="ramsay"
+                        >
+                            <div class="swiper-slide-content">
+                                <div class="swiper--vedette">
+                                    <img src="assets/images/ramsay.jpg" alt="" class="chef" />
+                                    <div class="swiper--vedette__content">
+                                        <h5>Gordon Ramsay</h5>
+                                        <p>@GordonRamsay Always near food</p>
+                                        <a href="">Plus d’information </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+       
+
+
+
+        <section class="partenaire">
+            <h1>Partenaires</h1>
+            <div class="wrapper">
+                <div class="img_partenaire">
+                    <img src="assets/images/gfuel.png" alt="Gfuel logo" />
+
+                    <img src="assets/images/racette pompette.jpg" alt="Les recette pompette logo" />
+
+                    <img src="assets/images/tva.jpg" alt="TVA logo" />
+
+                    <img src="assets/images/gillette.png" alt="Gilette logo" />
+
+                    <img src="assets/images/rsl.png" alt="Raid shadow legends logo" />
+
+                    <img src="assets/images/ubisoft.jpg" alt="ubisoft logo" />
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="video__partenaire">
+
+            <div class="container__video">
+                <div class="video" data-component="Video" data-video-id="37sYTzbfICI">
+                    <div class="video__media js-video">
+                        <img class="js-poster" src="./assets/images/beau_bbq.jpg" alt="barbecue party" />
+                        <svg class="icon icon--stroke icon--xl">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="wrapper-small">
+                <div class="footer__brand">
+                    <a href="#"><img src="assets/images/logo.png" alt="Logo Grill-o-rama" /></a>
+                </div>
+                <h2>Télécharger l’application</h2>
+
+                <nav class="nav-secondary">
+                    <ul>
+                        <div class="nav-secondary--left">
+                            <li>
+                                <a href="#" class="nav-secondary__item">Nous contacter</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-secondary__item">Carrière</a>
+                            </li>
+                        </div>
+                        <div class="nav-secondary--center">
+                            <ul>
+                                <li>
+                                    <a href="http://www.facebook.com" target="_blank">
+                                        <svg class="icon icon--md">
+                                            <use xlink:href="#icon-apple"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.instagram.com" target="_blank">
+                                        <svg class="icon icon--md">
+                                            <use xlink:href="#icon-google"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-secondary--right">
+                            <li>
+                                <a href="#" class="nav-secondary__item">Terme d'utilisation</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-secondary__item">Agrément</a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="social__footer">
+            <nav class="socials">
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#icon-snapchat"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="wrapper-small">
+                <p class="copyright">
+                    Projet fictif réalisé par Samuel Palma-Lemieux dans le cadre du cours Design d’expériences
+                    Techniques d’intégration multimédia - Collège Édouard-Montpetit
+                </p>
+            </div>
+        </footer>
+        <template id="tpl-modal">
+            <div class="modal">
+                <div class="modal__scrim"></div>
+                <div class="modal__box">
+                    <div class="modal__content">
+                        <h2>{{title}}</h2>
+                        
+                        <a href="conferencier.html">Plus d'information sur le conferencier</a>
+                        <img src="./assets/images/{{title}}.jpg" alt="{{title}}" />
+                    </div>
+                </div>
+                <button class="modal__close js-close"></button>
+            </div>
+        </template>
+    </body>
+</html>

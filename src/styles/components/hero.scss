@@ -1,0 +1,32 @@
+.hero__media{
+    img{
+        height: 70vh;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.hero{
+    position: relative;
+    text-align: center;
+
+    .hero__content{
+        position: absolute;
+        width: 100%;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        a:hover{
+            color:var(--color-primary);
+            
+            
+        }
+       
+    }
+}
+.hero__social{
+display: flex;
+justify-content: center;
+
+
+}

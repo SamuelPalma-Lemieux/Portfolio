@@ -1,0 +1,111 @@
+
+
+.programmation{
+    
+
+    color: var(--color-secondary);
+                    font-family: var(--font-primary);
+                    max-width: 50%;
+                    width: 100%;
+                    text-align: center;
+}
+.top{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    hr{
+        border: none;
+        border-bottom: 3px dotted var(--color-secondary);
+        width: 100%;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    h3,p{
+        flex-shrink: 0;
+        text-align: center;
+    }
+}
+
+.bottom{
+    text-align: start;
+    margin-top: -20px;
+}
+
+.horaire--single{
+    margin-bottom: 10px;
+}
+.inviter{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+.invitee{
+    margin-top: 50px;
+    max-width: 70%;
+    display: flex;
+    width: 100;
+    max-height: 270px;
+    background-color: var(--color-black);
+    border-radius:10px ;
+    justify-content: space-between;
+    margin-right: 50px;
+    
+
+img{
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 410px;
+    max-height: 407px;
+    margin-right: 120px;
+}
+p{
+    max-width: 250px;
+    color: var(--color-white);
+}
+h5{
+    color: var(--color-white);
+    font-size: var(--font-size-h4);
+}
+
+.swiper--vedette__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 120px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    a{
+        padding-bottom: 30px;
+    }
+}
+}
+}
+
+
+.programmation--content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programmation--content{
+    .intro{
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p,h2,h1{
+            margin-top: 20px;
+            
+            text-align: center;
+            color:var(--color-secondary)
+        }
+
+    }
+}
