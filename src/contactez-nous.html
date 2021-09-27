@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grill-o-rama</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Sen&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="site-container">
+            <header class="header" data-component="Header" data-autohide="true" data-scroll-limit="0.1">
+                <div class="wrapper">
+                    <a href="#" class="header__brand">
+                        <img src="assets/images/logo.png" alt="Logo Grill-o-rama" />
+                    </a>
+                    <nav class="nav-primary">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="nav-primary__item">Accueil</a>
+                            </li>
+                            <li>
+                                <a href="programmation.html" class="nav-primary__item">Programmation</a>
+                            </li>
+                            <li>
+                                <a href="conferencier.html" class="nav-primary__item">Conferenciers</a>
+                            </li>
+                            <li>
+                                <a href="contactez-nous.html" class="nav-primary__item">Contactez-nous</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+        </div>
+
+       
+
+
+      
+
+
+
+
+        <section class="petition">
+            <div class="petition__content wrapper">
+                <h1>Contactez-nous</h1>
+                <p>
+                    Pour des information ou des commentaires constructifs remplisser le formulaire suivant.
+                </p>
+                <p>Hésite pas c'est gratuit</p>
+
+                <form action="" class="form" autocomplete="off" data-component="Form">
+                  <div class="form__body">
+                    <fieldset class="grid">
+                        <div class="input">
+                            <label class="input__label" for="firstname">Votre prénom</label>
+                            <input
+                                class="input__element"
+                                type="text"
+                                name="firstname"
+                                id="firstname"
+                                placeholder="ex.: Paoul"
+                                required
+                            />
+                        </div>
+                        <div class="input">
+                            <label class="input__label" for="lastname">Votre nom de famille</label>
+                            <input
+                                class="input__element"
+                                type="text"
+                                name="lastname"
+                                id="lastname"
+                                placeholder="ex.:Mariutza"
+                                required
+                            />
+                        </div>
+                        <div class="input">
+                            <label class="input__label" for="email">Courriel</label>
+                            <input
+                                class="input__element"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="paoul@jaimelatim.ca"
+                                required
+                            />
+                        </div>
+                        <div class="input">
+                            <label class="input__label" for="phone">Telephone</label>
+                            <input
+                                class="input__element"
+                                type="tel"
+                                name="phone"
+                                id="phone"
+                                placeholder="(123) 456-7890"
+                                pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                                required
+                            />
+                        </div>
+                        <div class="input select">
+                            <label class="input__label" for="phone">Votre journée favorites</label>
+                            <select name="date" id="date" class="input__element" required>
+                                <option value="" hidden>Choisir votre journée</option>
+                                <option value="19">19 Juin</option>
+                                <option value="20">20 Juin</option>
+                                <option value="21">21 Juin</option>
+                                
+                            </select>
+                        </div>
+                        <fieldset>
+                            <p>Votre sexe</p>
+                            <div class="form__list" data-input-container>
+                                <div class="input radio">
+                                    <input
+                                        class="input__element"
+                                        type="radio"
+                                        name="sexe[]"
+                                        id="sexe1"
+                                        value="homme"
+                                        required
+                                    />
+                                    <label class="input__label" for="sexe1">homme</label>
+                                </div>
+                                <div class="input radio">
+                                    <input
+                                        class="input__element"
+                                        type="radio"
+                                        name="sexe[]"
+                                        id="sexe2"
+                                        value="femme"
+                                        required
+                                    />
+                                    <label class="input__label" for="sexe2">femme</label>
+                                </div>
+                                <div class="input radio">
+                                    <input
+                                        class="input__element"
+                                        type="radio"
+                                        name="sexe[]"
+                                        id="sexe3"
+                                        value="non-binaire"
+                                        required
+                                    />
+                                    <label class="input__label" for="sexe3">non-binaire</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                       
+                    </fieldset>
+
+                        <fieldset></fieldset>
+
+                        </fieldset>
+                            <p>Votre invité favoris</p>
+                            <div class="form__list" data-input-container>
+                                <div class="input radio">
+                                    <input
+                                        class="input__element"
+                                        type="radio"
+                                        name="invite[]"
+                                        id="invite1"
+                                        value="Giovanni Appolo"
+                                        required
+                                    />
+                                    <label class="input__label" for="invite1">Giovanni Appolo</label>
+                                </div>
+                                <div class="input radio">
+                                    <input
+                                        class="input__element"
+                                        type="radio"
+                                        name="invite[]"
+                                        id="invite2"
+                                        value="Gordon Ramsay"
+                                        required
+                                    />
+                                    <label class="input__label" for="invite2">Gordon Ramsay</label>
+                                </div>
+                                <div class="input radio">
+                                    <input
+                                        class="input__element"
+                                        type="radio"
+                                        name="invite[]"
+                                        id="invite3"
+                                        value="Jared from subway"
+                                        required
+                                    />
+                                    <label class="input__label" for="invite3">Jared from subway</label>
+                                </div>
+                                <div class="input radio">
+                                    <input
+                                        class="input__element"
+                                        type="radio"
+                                        name="invite[]"
+                                        id="invite4"
+                                        value="Joel Robuchon"
+                                        required
+                                    />
+                                    <label class="input__label" for="invite4">Joel Robuchon</label>
+                                </div>
+                                <div class="input radio">
+                                    <input
+                                        class="input__element"
+                                        type="radio"
+                                        name="invite[]"
+                                        id="invite5"
+                                        value="Alain Ducasse"
+                                        required
+                                    />
+                                    <label class="input__label" for="invite5">Alain Ducasse</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="input textarea u-grid-fullwidth">
+                            <label class="input__label" for="phone">Commentaire</label>
+                            <textarea class="input__element" name="comment" id="comment" required></textarea>
+                        </div>
+                        <div class="input checkbox">
+                            <input class="input__element" type="checkbox" name="optin[]" id="optin" value="true" />
+                            <label class="input__label" for="optin">Je m'abonne</label>
+                        </div>
+                    </fieldset>
+
+                   
+                    <footer class="form__footer">
+                        <button class="button">Envoyer la demande</button>
+                    </footer>
+                  </div>
+                    <div class="form__confirmation">
+                        <h2>Merci</h2>
+                        <p>Votre formulaire a bien ete envoye.</p>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="wrapper-small">
+                <div class="footer__brand">
+                    <a href="#"><img src="assets/images/logo.png" alt="Logo Grill-o-rama" /></a>
+                </div>
+                <h2>Télécharger l’application</h2>
+
+                <nav class="nav-secondary">
+                    <ul>
+                        <div class="nav-secondary--left">
+                            <li>
+                                <a href="#" class="nav-secondary__item">Nous contacter</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-secondary__item">Carrière</a>
+                            </li>
+                        </div>
+                        <div class="nav-secondary--center">
+                            <ul>
+                                <li>
+                                    <a href="http://www.facebook.com" target="_blank">
+                                        <svg class="icon icon--md">
+                                            <use xlink:href="#icon-apple"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.instagram.com" target="_blank">
+                                        <svg class="icon icon--md">
+                                            <use xlink:href="#icon-google"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-secondary--right">
+                            <li>
+                                <a href="#" class="nav-secondary__item">Terme d'utilisation</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-secondary__item">Agrément</a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="social__footer">
+            <nav class="socials">
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#icon-snapchat"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="wrapper-small">
+                <p class="copyright">
+                    Projet fictif réalisé par Samuel Palma-Lemieux dans le cadre du cours Design d’expériences
+                    Techniques d’intégration multimédia - Collège Édouard-Montpetit
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

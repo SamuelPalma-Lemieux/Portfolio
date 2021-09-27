@@ -1,0 +1,120 @@
+.sectionswiper-mobile {
+    display: none;
+}
+
+.en_vedette {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        width: 40vw;
+        text-align: center;
+        color: var(--color-secondary);
+        font-size: Var(--font-size-h1);
+        border-top: 4px solid var(--color-black);
+        border-bottom: 4px solid var(--color-black);
+        margin-bottom: var(--spacing-lg);
+        margin-top: var(--spacing-lg);
+        padding: var(--spacing-sm);
+    }
+}
+
+.swiper-wrapper {
+    display: flex;
+    swiper-slide {
+        margin-right: 200px;
+    }
+    .swiper-slide-secondary {
+        display: flex;
+        justify-content: center;
+    }
+    .swiper-slide-content {
+        width: 100%x;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.swiper--vedette {
+    display: flex;
+    width: 100%;
+    max-height: 270px;
+    background-color: var(--color-black);
+    border-radius: 10px;
+    justify-content: space-between;
+
+    img {
+        object-fit: cover;
+        border-radius: 10px;
+        max-width: 410px;
+        max-height: 407px;
+        margin-right: 120px;
+    }
+    p {
+        max-width: 250px;
+        color: var(--color-white);
+    }
+    h5 {
+        color: var(--color-white);
+        font-size: var(--font-size-h4);
+    }
+
+    .swiper--vedette__content {
+        max-height: 100%;
+        width: 15vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 120px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        a {
+            padding-bottom: 30px;
+        }
+    }
+    a:hover {
+        color: var(--color-primary);
+        background-image: url(../assets/images/underline.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 20px;
+    }
+}
+@media screen and (max-width: $breakpoint-md) {
+    img.chef {
+        display: none;
+    }
+
+    .pagination {
+        .swiper-pagination {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        .swiper-slide-content {
+        }
+    }
+    .swiper--vedette__content {
+        margin-right: 0px;
+        padding-left: 30%;
+        width: 50%;
+        display: flex;
+        margin-right: 0;
+
+        p {
+            display: none;
+        }
+    }
+    .button-chevron {
+        display: none;
+    }
+}
+
+.swiper-container {
+    margin-top: 50px;
+}
