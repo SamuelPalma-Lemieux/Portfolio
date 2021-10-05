@@ -1,0 +1,49 @@
+.contact__right{
+    display: none;
+    img{
+        max-height: 50vh;
+    }
+    @media screen and (min-width: $breakpoint-md){
+        display: block;
+    }
+}
+
+.contact__left{
+    button{
+        margin-top: 50px;
+    }
+    p{
+        max-width: 55%;
+    }
+    h4{
+        margin-top: 25px;
+    }
+    nav{
+        @media screen and (min-width: $breakpoint-md){
+        margin-top:50px;
+        ul{
+            display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+        li{
+            list-style-type: none;
+        
+        }
+       
+    }
+}
+    img{
+        display: block;
+        
+        @media screen and (min-width: $breakpoint-md){
+            display:none;
+        }
+    }
+    
+}
+.content{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}

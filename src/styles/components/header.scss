@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     z-index: 20;
-    transform: translateX(0) ;
+    transform: translateY(0) ;
     transition: all 0.4s $ease-out-quad;
     top: 0;
     
@@ -20,10 +20,11 @@
         align-items: center;
         a{
             max-width: 20vw;
+            
         }
     }
     .header-is-hidden.is-scrolling-down & {
-        transform: (translateX(-100%)) translateY(-4px) ;
+        transform: (translateY(-100%)) translateY(-4px) ;
        
     }
     
@@ -100,7 +101,7 @@
    ========================================================================== */
 .nav-primary {
     background-color: var(--color-bg-secondary);
-    
+    text-align: center;
     position: absolute;
     overflow-y: auto;
     width: 100%;
@@ -109,7 +110,7 @@
     left: 0;
     display: flex;
     z-index: 1;
-    transform: translateX(-100%);//modifier
+    transform: translateY(-100%);//modifier
     transition: all 0.4s $ease-out-expo;//modifier
 
     .separateur{
@@ -125,21 +126,26 @@
     }
 
     .nav-is-active &{
-        transform: translateX(0);//modifier anim + point tp
+        transform: translateY(0);//modifier anim + point tp
         opacity: 1;//modifier anim + point tp
+        justify-content: center;
+       
     }
     
     ul {
-        width: 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        align-items: center;
+        overflow: hidden;
         list-style: none;
         padding: 0;
         opacity: 1;
         
-     
+    li{
+        margin: 40px;
+    }
             
       
         a {
@@ -163,11 +169,12 @@
         position: relative;
         height: auto;
         width: auto;
-        transform: translateX(0%);
+        transform: translateY(0%);
         ul {
             flex-direction: row;
             opacity: 1;
             transform: none;
+            
         }
         a {
             color: var(--color-primary);
@@ -189,12 +196,15 @@
     padding: 0 20px;
     position: relative;
     z-index: 2;
+    
     margin-right: 30px;
 
     @media screen and (min-width: $breakpoint-md) {
         font-size: inherit;
         text-transform: none;
         font-weight: 700;
+        
+        
     }
 }
 .nav-is-active {
@@ -204,4 +214,26 @@
 }
 ul{
     padding: 0;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+.header__brand{
+img{
+max-height: 200px;    
+}
+}
+.left{
+    h3{
+        font-size: var(--font-size-h5);
+    }
+    @media screen and (min-width: $breakpoint-md){
+        h3{
+            font-size: var(--font-size-h3);
+        }
+      
+    }
 }

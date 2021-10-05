@@ -5,9 +5,18 @@ model-viewer#reveal {
  model-viewer{
     background-color: transparent;
      width: 100vw;
-     height: 100vh;
+  height: 50vh;
+  transform: rotate(90deg);
     
  }
  .model3D{
      overflow: hidden;
+ }
+ .hero{
+     background-image: url(../../assets/images/fond.png);
+        height: 82.9vh;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
  }
