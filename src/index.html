@@ -5,67 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Samuel Palma-Lemieux</title>
 
-       
-
         <link rel="stylesheet" href="styles/main.css" />
 
         <!--Imports a model-viewer JavaScript code -->
-    <!--It helps to handle how the 3D Object would be displayed -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <!--It helps to handle how the 3D Object would be displayed -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
         <link rel="stylesheet" href="styles/main.css" />
         <script src="scripts/main.js" defer></script>
     </head>
 
     <body data-component="Scrolly">
         <div class="site-container">
-            <header
-                class="header"
-                data-component="Header"
-                data-autohide="true"
-                data-scroll-limit="0.1"
-            >
+            <header class="header" data-component="Header" data-autohide="true" data-scroll-limit="0.1">
                 <div class="wrapper">
                     <div class="left">
-                    <a href="#" class="header__brand">
-                        <img src="./assets/images/logo.png" alt="logo">
-                    
-                    </a>
-                    <h3>Samuel Palma-Lemieux</h3>
-                </div>
+                        <a href="#" class="header__brand">
+                            <img src="./assets/images/logo.png" alt="logo" />
+                        </a>
+                        <h3>Samuel Palma-Lemieux</h3>
+                    </div>
                     <nav class="nav-primary">
                         <ul>
                             <li>
-                                <a
-                                    href="index.html"
-                                    class="nav-primary__item"
-                                    >Accueil</a
-                                >
+                                <a href="index.html" class="nav-primary__item">Accueil</a>
                             </li>
-                           
+
                             <li>
-                                <a href="index.html" class="nav-primary__item"
-                                    >Projets</a
-                                >
+                                <a href="projet.html" class="nav-primary__item">Projets</a>
                             </li>
-                          
+
                             <li>
-                                <a
-                                    href="programmation.html"
-                                    class="nav-primary__item"
-                                    >À propos</a
-                                >
+                                <a href="apropos.html" class="nav-primary__item">À propos</a>
                             </li>
-                            
+
                             <li>
-                                <a
-                                    href="contact.html"
-                                    class="nav-primary__item"
-                                    >Contact</a
-                                >
+                                <a href="contact.html" class="nav-primary__item">Contact</a>
                             </li>
-                           
-                            
                         </ul>
                     </nav>
                     <button class="header__toggle js-toggle">
@@ -75,21 +51,26 @@
                     </button>
                 </div>
             </header>
-             <div class="hero">
-            <div class="wrapper wrapper__content">
-               
-            <div class="model3D">
-                <!-- 3D object -->
-                <!-- This inserts the 3D object inside the aside container -->
-                <model-viewer class="3d-accueil" src="./assets/3d/Quai.glb" alt="Quai"
-                auto-rotate  disable-zoom camera-orbit="30deg 90deg 15m" ar
-                    ios-src="./assets/3d/Quai.glb">
-                </model-viewer>
+            <div class="hero">
+                <div class="wrapper wrapper__content">
+                    <div class="model3D">
+                        <!-- 3D object -->
+                        <!-- This inserts the 3D object inside the aside container -->
+                        <model-viewer
+                            class="3d-accueil"
+                            src="./assets/3d/Accueil.glb"
+                            alt="Quai"
+                            auto-rotate
+                            camera-target="auto auto auto"
+                            disable-zoom
+                            camera-orbit="30deg 10deg 30m"
+                            ar
+                            ios-src="./assets/3d/Quai.glb"
+                        >
+                        </model-viewer>
+                    </div>
+                </div>
             </div>
         </div>
-           </div>
-        </div>
     </body>
-   
-     
 </html>

@@ -1,6 +1,7 @@
 .contact__right {
     display: none;
     img {
+        border-radius: 5px;
         max-height: 50vh;
     }
     @media screen and (min-width: $breakpoint-md) {
@@ -9,18 +10,62 @@
 }
 
 .contact__left {
-    button {
-        margin-top: 50px;
+    button{
+        margin-top: 30px;
     }
-    p {
-        max-width: 55%;
+    h1{
+        font-size: 35px;
     }
-    h4 {
-        margin-top: 25px;
+    p{
+        text-align: center;
+        max-width: 70%;
     }
-    nav {
+    svg{
+        width: 2em;
+        height: 2em;
+    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h4{
+      font-size: 15px;
+      margin: 5px;
+  }
+  nav {
+   
+    width: 70vw;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    li {
+        list-style-type: none;
+
+    }
+}
+    
         @media screen and (min-width: $breakpoint-md) {
-            margin-top: 50px;
+            h4{
+                font-size: 25px;
+            }
+            align-items: flex-start;
+            button {
+                margin-top: 100px;
+                margin-left: 100px;
+            }
+            p {
+                max-width: 55%;
+                text-align: start;
+            }
+            h4 {
+                margin-top: 25px;
+            }
+               nav {
+            margin-top: 30px;
+            max-width: 20vw;
             ul {
                 display: flex;
                 flex-direction: row;
@@ -33,14 +78,22 @@
     }
     img {
         display: block;
-
+max-height: 30vh;
+border-radius: 5px;
+margin-bottom: 30px;
+margin-top:10px;
         @media screen and (min-width: $breakpoint-md) {
             display: none;
         }
     }
 }
 .content {
-    padding-top: 100px;
-    display: flex;
-    justify-content: space-around;
+   justify-content: center;
+   align-items: center;
+    @media screen and (min-width: $breakpoint-md){
+       
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
 }
