@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Samuel Palma-Lemieux</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <!--Imports a model-viewer JavaScript code -->
+        <!--It helps to handle how the 3D Object would be displayed -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body data-component="Scrolly">
+        <div class="site-container">
+            <header class="header" data-component="Header" data-autohide="true" data-scroll-limit="0">
+                <div class="wrapper">
+                    <div class="left">
+                        <a href="#" class="header__brand">
+                            <img src="./assets/images/logo.png" alt="logo" />
+                        </a>
+                        <h3>Samuel Palma-Lemieux</h3>
+                    </div>
+                    <nav class="nav-primary">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="nav-primary__item">Accueil</a>
+                            </li>
+
+                            <li>
+                                <a href="projet.html" class="nav-primary__item">Projets</a>
+                            </li>
+
+                            <li>
+                                <a href="apropos.html" class="nav-primary__item">À propos</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html" class="nav-primary__item">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+        </div>
+        <section class="content me">
+            <section class="top">
+                <div class="moi__left">
+                    <h1>Salut, moi c’est Sam!</h1>
+                    <p>
+                        Au cours des deux dernières années, j’ai exploré plusieurs facettes du multimédias et je suis
+                        tombé en amour avec la 3D. Au cours de mon stage, j'espère approfondir mes compétences acquises
+                        en plus de développer de nouvelles aptitudes.
+                    </p>
+                    <p>
+                        Mes projets sont originaux et pour la plupart très coloré. J’ai fait de la
+                        <strong> modélisation </strong> et l’<strong>animation</strong> d’objets, personnages,
+                        environnements et création de scène.
+                    </p>
+                    <ul class="skills">
+                        <li>
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <div class="hidden__desktop">
+                        <img src="./assets/images/moi.png" alt="Samuel" />
+                    </div>
+                    <h2>Mes qualités</h2>
+                    <div class="qual wrapper__qual">
+                        <p>Sociable</p>
+                        <p>Facilité à travailler en équipe</p>
+                        <p>Attention aux détails</p>
+                        <p>Ouverture à la critique</p>
+                    </div>
+                </div>
+                <div class="moi__right">
+                    <div class="hidden__mobile">
+                        <img src="./assets/images/moi.png" alt="Samuel" />
+                    </div>
+                </div>
+            </section>
+            <section class="bottom">
+                <div class="left">
+                    <img src="./assets/images/funko.png" alt="funko" class="funko hidden__mobile" />
+                </div>
+                <div class="right">
+                    <h2>Mes passe-temps</h2>
+                    <div class="hobbies">
+                        <h3>Jeux vidéo</h3>
+                        <img src="./assets/images/rocket1.png" alt="rocket" />
+                        <p>J’adore avoir du challenge avec des jeux de puzzle</p>
+                    </div>
+                    <div class="hobbies">
+                        <h3>Art</h3>
+                        <img src="./assets/images/hand.png" alt="rocket" />
+                        <p>J’ai faire des oeuvres que ce soit abstrait ou concret</p>
+                    </div>
+                    <div class="hobbies">
+                        <h3>Sport</h3>
+                        <img src="./assets/images/rocket2.png" alt="rocket" />
+                        <p>je ne peux pas m'empêcher de faire du sport avec mes amis</p>
+                    </div>
+                    <img src="./assets/images/funko.png" alt="funko" class="funko hidden__desktop" />
+                </div>
+              
+            </section>
+            <div class="bottom__text">
+                <p>
+                    Suite à la TIM, je prévois appliqué à l'École NAD-UQAC en jeux vidéo afin de trouver un emploi
+                    dans une compagnie innovante. J’aimerais travailler sur des projets d’envergure qui me mettront
+                    au défi.
+                </p>
+                
+            </div>
+        </section>
+    </body>
+</html>

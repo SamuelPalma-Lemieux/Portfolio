@@ -145,6 +145,7 @@
         
     li{
         margin: 40px;
+       
     }
             
       
@@ -197,7 +198,7 @@
     position: relative;
     z-index: 2;
     
-    margin-right: 30px;
+    
 
     @media screen and (min-width: $breakpoint-md) {
         font-size: inherit;

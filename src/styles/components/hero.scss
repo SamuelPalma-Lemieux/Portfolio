@@ -3,18 +3,22 @@ model-viewer#reveal {
   }
 
  model-viewer{
+    width: 100%;
+    height: 40vh;
+transform: rotate(270deg);
     background-color: transparent;
+    @media screen and (min-width: $breakpoint-sm){
      width: 90vw;
   height: 70vh;
   
-    
+    }
  }
  .model3D{
      overflow: hidden;
-     height: 70vh;
+  
  }
  .hero{
-     background-image: url(../../assets/images/fond.png);
+     //background-image: url(../../assets/images/fond.png);
         height: 80.5vh;
         display: flex;
         align-items: center;
@@ -27,7 +31,4 @@ model-viewer#reveal {
  .userInput{
     width: 100vw;
     height: 100vh;
- }
- .wrapper__content{
-     
  }
