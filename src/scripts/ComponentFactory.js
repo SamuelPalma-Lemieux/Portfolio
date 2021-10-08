@@ -11,7 +11,14 @@ export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
-      Carousel,Header,Video,Form,Modal,Snackbar,Scrolly,
+      Carousel,
+      Header,
+      Video,
+      Form,
+      Modal,
+      Snackbar,
+      Scrolly,
+      
     };
     this.init();
   }
