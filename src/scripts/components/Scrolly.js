@@ -2,7 +2,7 @@ export default class Scrolly {
   constructor(element) {
     this.element = element;
     this.options = {
-      rootMargin: '0px 0px 0px 0px', // de ou les transition se lance
+      rootMargin: '0px 0px -250px 0px', // de ou les transition se lance
     };
     this.init();
   }

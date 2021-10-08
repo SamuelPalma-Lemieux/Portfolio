@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Samuel Palma-Lemieux</title>
+        <title>Samuel Palma-Lemieux - modélisateur 3D - Portfolio</title>
+        <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.png"/>
 
         <link rel="stylesheet" href="styles/main.css" />
 
@@ -20,7 +21,7 @@
             <header class="header" data-component="Header" data-autohide="true" data-scroll-limit="0.1">
                 <div class="wrapper">
                     <div class="left">
-                        <a href="#" class="header__brand">
+                        <a href="index.html" class="header__brand">
                             <img src="./assets/images/logo.png" alt="logo" />
                         </a>
                         <h3>Samuel Palma-Lemieux</h3>
@@ -58,10 +59,10 @@
                         <!-- This inserts the 3D object inside the aside container -->
                         <model-viewer
                             class="3d-accueil"
-                            src="../assets/3d/Accueil.glb"
+                            src="../assets/images/accueil.glb"
                             alt="Quai"
                             rotation-per-second="30deg"
-                            auto-rotate="30deg"
+                            auto-rotate="65deg"
                             camera-target="auto auto auto"
                             disable-zoom
                             camera-orbit="0
@@ -72,7 +73,40 @@
                         </model-viewer>
                     </div>
                 </div>
+                <nav class="socials">
+                    <ul>
+                        <li>
+                            <a href="https://www.behance.net/samuelpalma-l" target="_blank">
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-behance"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/samuel-palma-lemieux-a911a2221/" target="_blank">
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.artstation.com/samuelpalma-lemieux" target="_blank">
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-artstation"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/spalmalemieux/" target="_blank">
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            
         </div>
     </body>
 </html>

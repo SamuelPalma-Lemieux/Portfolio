@@ -1,103 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Samuel Palma-Lemieux</title>
 
-        <link rel="stylesheet" href="styles/main.css" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Palma-Lemieux - modélisateur 3D - Portfolio</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="styles/main.css" />
 
-        <!--Imports a model-viewer JavaScript code -->
-        <!--It helps to handle how the 3D Object would be displayed -->
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-        <link rel="stylesheet" href="styles/main.css" />
-        <script src="scripts/main.js" defer></script>
-    </head>
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+</head>
 
-    <body data-component="Scrolly">
-        <div class="site-container">
-            <header class="header" data-component="Header" data-autohide="true" data-scroll-limit="0.1">
-                <div class="wrapper">
-                    <div class="left">
-                        <a href="#" class="header__brand">
-                            <img src="./assets/images/logo.png" alt="logo" />
-                        </a>
-                        <h3>Samuel Palma-Lemieux</h3>
-                    </div>
-                    <nav class="nav-primary">
-                        <ul>
-                            <li>
-                                <a href="index.html" class="nav-primary__item">Accueil</a>
-                            </li>
-
-                            <li>
-                                <a href="projet.html" class="nav-primary__item">Projets</a>
-                            </li>
-
-                            <li>
-                                <a href="apropos.html" class="nav-primary__item">À propos</a>
-                            </li>
-
-                            <li>
-                                <a href="contact.html" class="nav-primary__item">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="header__toggle js-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+<body data-component="Scrolly">
+    <div class="site-container">
+        <header class="header" data-component="Header" data-autohide="true" data-scroll-limit="0.1">
+            <div class="wrapper">
+                <div class="left">
+                    <a href="index.html" class="header__brand">
+                        <img src="./assets/images/logo.png" alt="logo" />
+                    </a>
+                    <h3>Samuel Palma-Lemieux</h3>
                 </div>
-            </header>
-        </div>
-        <section class="content">
-            <section class="contact__left">
-                <h1>Me contacter</h1>
-                <p>N’hésiter pas a me contacter pour faire plus ample connaissance</p>
-                <div class="hidden__desktop">
-                    <img src="./assets/images/moi.png" alt="Samuel" />
-                </div>
-                <h4>téléphone: (438) 499-8473</h4>
-                <h4>Courriel: spalmalemieux@gmail.com</h4>
-                <nav class="socials">
+                <nav class="nav-primary">
                     <ul>
                         <li>
-                            <a href="http://www.facebook.com" target="_blank">
-                                <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-behance"></use>
-                                </svg>
-                            </a>
+                            <a href="index.html" class="nav-primary__item">Accueil</a>
                         </li>
+
                         <li>
-                            <a href="http://www.instagram.com" target="_blank">
-                                <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-linkedin"></use>
-                                </svg>
-                            </a>
+                            <a href="projet.html" class="nav-primary__item">Projets</a>
                         </li>
+
                         <li>
-                            <a href="http://www.twitter.com" target="_blank">
-                                <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-artstation"></use>
-                                </svg>
-                            </a>
+                            <a href="apropos.html" class="nav-primary__item">À propos</a>
                         </li>
+
                         <li>
-                            <a href="http://www.twitter.com" target="_blank">
-                                <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-instagram"></use>
-                                </svg>
-                            </a>
+                            <a href="contact.html" class="nav-primary__item">Contact</a>
                         </li>
                     </ul>
                 </nav>
-                <button><a href=""> Télécharger mon cv </a></button>
-            </section>
-            <section class="contact__right">
+                <button class="header__toggle js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+    </div>
+    <section class="content">
+        <article class="contact__left" data-scrolly="fromBottom">
+            <h1>Me contacter</h1>
+            <p>N’hésiter pas a me contacter pour faire plus ample connaissance</p>
+            <div class="hidden__desktop">
                 <img src="./assets/images/moi.png" alt="Samuel" />
-            </section>
-        </section>
-    </body>
+            </div>
+            <h4>téléphone: <strong> <a href="tel:+4384998473">(438) 499-8473</a></strong></h4>
+            <h4>Courriel: <strong> <a href="mailto:spalmalemieux@gmail.com"> spalmalemieux@gmail.com</a></strong></h4>
+            <nav class="socials">
+                <ul>
+                    <li>
+                        <a href="https://www.behance.net/samuelpalma-l" target="_blank">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-behance"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/samuel-palma-lemieux-a911a2221/" target="_blank">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.artstation.com/samuelpalma-lemieux" target="_blank">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-artstation"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/spalmalemieux/" target="_blank">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="deco">
+
+                <a href="./assets/images/cv.pdf" download="Curriculum Vitae" id="cv">
+                    <button>
+                        Télécharger mon cv
+
+                    </button>
+                </a>
+                <span class="a"></span>
+                <span class="b"></span>
+            </div>
+        </article>
+        <article class="contact__right" data-scrolly="fromBottom">
+            <img src="./assets/images/moi.png" alt="Samuel" />
+
+        </article>
+    </section>
+</body>
+
 </html>

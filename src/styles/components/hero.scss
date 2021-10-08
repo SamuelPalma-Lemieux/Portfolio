@@ -18,9 +18,11 @@ transform: rotate(270deg);
   
  }
  .hero{
+     position: relative;
      //background-image: url(../../assets/images/fond.png);
         height: 80.5vh;
         display: flex;
+        flex-direction: column;
         align-items: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -28,7 +30,31 @@ transform: rotate(270deg);
             height: 77.5vh;
         }
  }
+
  .userInput{
     width: 100vw;
     height: 100vh;
  }
+ .hero{
+    nav {
+        bottom: 0;
+   position: absolute;
+        width: 70vw;
+        @media screen and (min-width: 600px){
+            width: 50vw
+        }
+
+        @media screen and (min-width: $breakpoint-md){
+            width: 30vw;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        li {
+            list-style-type: none;
+    
+        }
+    }
+}
