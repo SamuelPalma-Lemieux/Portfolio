@@ -327,3 +327,10 @@ nav{
 p{
     font-family:'Poppins', sans-serif;
 }
+
+nav{
+    svg:hover{
+        fill: white;
+        stroke: black;
+    }
+}
