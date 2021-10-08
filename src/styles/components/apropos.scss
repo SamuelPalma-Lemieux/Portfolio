@@ -284,6 +284,10 @@
 
 .fot {
     nav {
+        svg{
+            width: 2em;
+        height: 2em;
+        }
         width: 70vw;
         @media screen and (min-width: 600px) {
             width: 50vw;
@@ -301,6 +305,7 @@ p {
 
 nav {
     svg:hover {
+        
         fill: white;
         stroke: black;
     }

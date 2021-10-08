@@ -157,7 +157,10 @@
     
         nav {
            
-           
+           svg{
+            width: 2em;
+            height: 2em;
+           }
           
            width: 50vw;
            @media screen and (min-width: $breakpoint-md){
