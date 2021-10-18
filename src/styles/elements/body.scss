@@ -11,3 +11,27 @@ body {
     line-height: 1.6;
     background-image: url(../assets/images/ricepaper_v3.png);
 }
+
+
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    border-radius:10px;
+    border: solid 3px transparent;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #161412;
+    outline: 1px solid white;
+    border-radius:10px;
+    border: solid 2px white;
+  }
+
+  .lazy{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
