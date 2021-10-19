@@ -133,6 +133,8 @@
         .hobbies {
             width: 100%;
             margin-bottom: 50px;
+            margin-left: 0;
+            margin-right: 20px;
 
             @media screen and (min-width: $breakpoint-md) {
                 width: 45%;
@@ -144,6 +146,7 @@
                 font-family: 'Poppins', sans-serif;
             }
             p {
+                margin-top: 0;
                 font-weight: 600;
             }
             img {
@@ -254,6 +257,7 @@
         @media screen and (min-width: $breakpoint-md) {
             margin: 0;
             width: 50%;
+            margin-bottom: 40px;
         }
     }
 }
@@ -309,4 +313,7 @@ nav {
         fill: white;
         stroke: black;
     }
+}
+.wrapper__qual{
+    margin-top: 20px;
 }

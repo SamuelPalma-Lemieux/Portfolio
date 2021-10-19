@@ -1,189 +1,184 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Samuel Palma-Lemieux - modélisateur 3D - Portfolio</title>
+        <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.png" />
+        <link rel="stylesheet" href="styles/main.css" />
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samuel Palma-Lemieux - modélisateur 3D - Portfolio</title>
-    <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.png" />
-    <link rel="stylesheet" href="styles/main.css" />
+        <!--Imports a model-viewer JavaScript code -->
+        <!--It helps to handle how the 3D Object would be displayed -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
 
-    <!--Imports a model-viewer JavaScript code -->
-    <!--It helps to handle how the 3D Object would be displayed -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <link rel="stylesheet" href="styles/main.css" />
-    <script src="scripts/main.js" defer></script>
-</head>
+    <body data-component="Scrolly">
+        <div class="site-container">
+            <header class="header" data-component="Header" data-autohide="true" data-scroll-limit="0.1">
+                <div class="wrapper">
+                    <div class="left">
+                        <a href="index.html" class="header__brand">
+                            <img src="./assets/images/logo.png" alt="logo" />
+                        </a>
+                        <h3>Samuel Palma-Lemieux</h3>
+                    </div>
+                    <nav class="nav-primary">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="nav-primary__item">Accueil</a>
+                            </li>
 
-<body data-component="Scrolly">
-    <div class="site-container">
-        <header class="header" data-component="Header" data-autohide="true" data-scroll-limit="0.1">
-            <div class="wrapper">
-                <div class="left">
-                    <a href="index.html" class="header__brand">
-                        <img src="./assets/images/logo.png" alt="logo" />
-                    </a>
-                    <h3>Samuel Palma-Lemieux</h3>
+                            <li>
+                                <a href="projet.html" class="nav-primary__item">Projets</a>
+                            </li>
+
+                            <li>
+                                <a href="apropos.html" class="nav-primary__item">À propos</a>
+                            </li>
+                            <span></span>
+                            <li>
+                                <a href="contact.html" class="nav-primary__item">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-                <nav class="nav-primary">
-                    <ul>
+            </header>
+        </div>
+        <section class="content me">
+            <section class="top" data-scrolly="fromBottom">
+                <div class="moi__left">
+                    <h1>Salut, moi c’est Sam!</h1>
+                    <p>
+                        Au cours des deux dernières années, j’ai exploré plusieurs facettes du multimédias et je suis
+                        tombé en <strong> amour avec la 3D</strong>. Au cours de mon stage, j'espère approfondir mes
+                        compétences acquises en plus de développer de nouvelles aptitudes.
+                    </p>
+                    <span></span>
+                    <p>
+                        Mes projets sont originaux et pour la plupart très coloré. J’ai fait de la
+                        <strong> modélisation </strong> et l’<strong>animation</strong> d’objets, personnages,
+                        environnements et création de scène.
+                    </p>
+                    <ul class="skills">
                         <li>
-                            <a href="index.html" class="nav-primary__item">Accueil</a>
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-blender"></use>
+                            </svg>
                         </li>
-
                         <li>
-                            <a href="projet.html" class="nav-primary__item">Projets</a>
-                        </li>
-
-                        <li>
-                            <a href="apropos.html" class="nav-primary__item">À propos</a>
-                        </li>
-<span></span>
-                        <li>
-                            <a href="contact.html" class="nav-primary__item">Contact</a>
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-aftereffect"></use>
+                            </svg>
                         </li>
                     </ul>
-                </nav>
-                <button class="header__toggle js-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                    <div class="hidden__desktop">
+                        <img src="./assets/images/moi.png" alt="Samuel" />
+                    </div>
+                </div>
+
+                <div class="moi__right">
+                    <div class="hidden__mobile">
+                        <img src="./assets/images/moi.png" alt="Samuel" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="contente" data-scrolly="fromBottom">
+                <article class="vid" data-scrolly="fromBottom">
+                    <div class="video" data-component="Video" data-video-id="dQw4w9WgXcQ">
+                        <div class="video__media js-video"></div>
+                    </div>
+                </article>
+                <div class="qualidad">
+                    <h2>Mes qualités</h2>
+                    <div class="qual wrapper__qual">
+                        <p data-scrolly="fromBottom"><strong>Sociable</strong></p>
+                        <p data-scrolly="fromBottom"><strong>Facilité à travailler en équipe</strong></p>
+                        <p data-scrolly="fromBottom"><strong>Attention aux détails</strong></p>
+                        <p data-scrolly="fromBottom"><strong>Ouverture à la critique</strong></p>
+                    </div>
+                </div>
+            </section>
+            <div class="bottom__text" data-scrolly="fromBottom">
+                <p>
+                    Suite à la TIM, je prévois appliqué à l'École NAD-UQAC en jeux vidéo afin de trouver un emploi dans
+                    une compagnie innovante. J’aimerais travailler sur des projets d’envergure qui me mettront au défi.
+                </p>
             </div>
-        </header>
-    </div>
-    <section class="content me">
-        <section class="top" data-scrolly="fromBottom">
-            <div class="moi__left">
-                <h1>Salut, moi c’est Sam!</h1>
-                <p>
-                    Au cours des deux dernières années, j’ai exploré plusieurs facettes du multimédias et je suis
-                    tombé en <strong> amour avec la 3D</strong>. Au cours de mon stage, j'espère approfondir mes compétences acquises
-                    en plus de développer de nouvelles aptitudes.
-                </p>
-                <span></span>
-                <p>
-                    Mes projets sont originaux et pour la plupart très coloré. J’ai fait de la
-                    <strong> modélisation </strong> et l’<strong>animation</strong> d’objets, personnages,
-                    environnements et création de scène.
-                </p>
-                <ul class="skills">
+            <section class="bottom" data-scrolly="fromBottom">
+                <div class="left">
+                    <img src="./assets/images/moi2.png" alt="funko" class="funko hidden__mobile" />
+                </div>
+
+                <div class="right">
+                    <h2>Mes passe-temps</h2>
+                    <div class="listhobbies">
+                        <div class="hobbies" data-scrolly="fromBottom">
+                            <h3>Jeux vidéo</h3>
+                            <img src="./assets/images/rocket1.png" alt="rocket" />
+                            <p>J’adore avoir du challenge avec des jeux de puzzle</p>
+                        </div>
+                        <div class="hobbies" data-scrolly="fromBottom">
+                            <h3>Art</h3>
+                            <img src="./assets/images/hand.png" alt="rocket" />
+                            <p>J’ai faire des oeuvres que ce soit abstrait ou concret</p>
+                        </div>
+                        <div class="hobbies" data-scrolly="fromBottom">
+                            <h3>Sport</h3>
+                            <img src="./assets/images/rocket2.png" alt="rocket" />
+                            <p>je ne peux pas m'empêcher de faire du sport avec mes amis</p>
+                        </div>
+                        <img
+                            src="./assets/images/moi2.png"
+                            alt="funko"
+                            data-scrolly="fromBottom"
+                            class="funko hidden__desktop"
+                        />
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="fot">
+            <nav class="socials" data-scrolly="fromBottom1">
+                <ul>
                     <li>
-                        <svg class="icon icon--lg">
-                            <use xlink:href="#icon-blender"></use>
-                        </svg>
+                        <a href="https://www.behance.net/samuelpalma-l" target="_blank">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-behance"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li>
-                        <svg class="icon icon--lg">
-                            <use xlink:href="#icon-aftereffect"></use>
-                        </svg>
+                        <a href="https://www.linkedin.com/in/samuel-palma-lemieux-a911a2221/" target="_blank">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.artstation.com/samuelpalma-lemieux" target="_blank">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-artstation"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/spalmalemieux/" target="_blank">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-                <div class="hidden__desktop">
-                    <img src="./assets/images/moi.png" alt="Samuel" />
-                </div>
-
-            </div>
-
-            <div class="moi__right">
-                <div class="hidden__mobile">
-                    <img src="./assets/images/moi.png" alt="Samuel" />
-                </div>
-            </div>
-        </section>
-
-        <section class="contente" data-scrolly="fromBottom">
-        <article class="vid">
-            <div class="video" data-component="Video" data-video-id="dQw4w9WgXcQ">
-                <div class="video__media js-video">
-                </div>
-            </div>
-                
-            
-        </article>
-        <div class="qualidad" >
-            <h2>Mes qualités</h2>
-            <div class="qual wrapper__qual">
-                <p data-scrolly="fromBottom"><strong>  Sociable</strong></p>
-                <p data-scrolly="fromBottom"> <strong>Facilité à travailler en équipe</strong></p>
-                <p data-scrolly="fromBottom"><strong>Attention aux détails</strong></p>
-                <p data-scrolly="fromBottom"><strong>Ouverture à la critique</strong></p>
-            </div>
+            </nav>
         </div>
-    </section>
-    <div class="bottom__text" data-scrolly="fromBottom">
-        <p>
-            Suite à la TIM, je prévois appliqué à l'École NAD-UQAC en jeux vidéo afin de trouver un emploi
-            dans une compagnie innovante. J’aimerais travailler sur des projets d’envergure qui me mettront
-            au défi.
-        </p>
-
-    </div>
-        <section class="bottom" data-scrolly="fromBottom">
-            <div class="left">
-                <img src="./assets/images/moi2.png" alt="funko" class="funko hidden__mobile" />
-            </div>
-
-            <div class="right">
-                <h2>Mes passe-temps</h2>
-                <div class="listhobbies">
-                    <div class="hobbies" data-scrolly="fromBottom" >
-                        <h3>Jeux vidéo</h3>
-                        <img src="./assets/images/rocket1.png" alt="rocket" />
-                        <p>  J’adore avoir du challenge avec des jeux de puzzle</p>
-                    </div>
-                    <div class="hobbies" data-scrolly="fromBottom">
-                        <h3>Art</h3>
-                        <img src="./assets/images/hand.png" alt="rocket" />
-                        <p> J’ai faire des oeuvres que ce soit abstrait ou concret</p>
-                    </div>
-                    <div class="hobbies" data-scrolly="fromBottom">
-                        <h3>Sport</h3>
-                        <img src="./assets/images/rocket2.png" alt="rocket" />
-                        <p>  je ne peux pas m'empêcher de faire du sport avec mes amis</p>
-                    </div>
-                    <img src="./assets/images/funko.png" alt="funko" class="funko hidden__desktop" />
-                </div>
-            </div>
-
-        </section>
-      
-    </section>
-    <div class="fot">
-        <nav class="socials " data-scrolly="fromBottom1">
-            <ul>
-                <li>
-                    <a href="https://www.behance.net/samuelpalma-l" target="_blank">
-                        <svg class="icon icon--lg">
-                            <use xlink:href="#icon-behance"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/samuel-palma-lemieux-a911a2221/" target="_blank">
-                        <svg class="icon icon--lg">
-                            <use xlink:href="#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.artstation.com/samuelpalma-lemieux" target="_blank">
-                        <svg class="icon icon--lg">
-                            <use xlink:href="#icon-artstation"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/spalmalemieux/" target="_blank">
-                        <svg class="icon icon--lg">
-                            <use xlink:href="#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</body>
-
+    </body>
 </html>
