@@ -317,3 +317,16 @@ nav {
 .wrapper__qual{
     margin-top: 20px;
 }
+.ok{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    h2{
+        margin-bottom:20px;
+    }
+}
+
